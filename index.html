@@ -1,0 +1,261 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f5] px-10 py-3">
+          <div class="flex items-center gap-8">
+            <div class="flex items-center gap-4 text-[#111418]">
+              <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path></svg>
+              </div>
+              <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">WhatToWatchNow</h2>
+            </div>
+            <div class="flex items-center gap-9">
+              <a class="text-[#111418] text-sm font-medium leading-normal" href="#">Home</a>
+              <a class="text-[#111418] text-sm font-medium leading-normal" href="#">Movies</a>
+              <a class="text-[#111418] text-sm font-medium leading-normal" href="#">TV Shows</a>
+              <a class="text-[#111418] text-sm font-medium leading-normal" href="#">People</a>
+            </div>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <label class="flex flex-col min-w-40 !h-10 max-w-64">
+              <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                <div
+                  class="text-[#60748a] flex border-none bg-[#f0f2f5] items-center justify-center pl-4 rounded-l-lg border-r-0"
+                  data-icon="MagnifyingGlass"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  placeholder="Search"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] focus:outline-0 focus:ring-0 border-none bg-[#f0f2f5] focus:border-none h-full placeholder:text-[#60748a] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                  value=""
+                />
+              </div>
+            </label>
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f0f2f5] text-[#111418] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+            >
+              <div class="text-[#111418]" data-icon="BookmarkSimple" data-size="20px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M184,32H72A16,16,0,0,0,56,48V224a8,8,0,0,0,12.24,6.78L128,193.43l59.77,37.35A8,8,0,0,0,200,224V48A16,16,0,0,0,184,32Zm0,177.57-51.77-32.35a8,8,0,0,0-8.48,0L72,209.57V48H184Z"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAySYVgqDW1M1rvpFyoG44YK9Jsp1f7kBw1xF8CkGtFDGlHBOMZ1rHTFcmf34ktpYl7K-j-obq1yb7K0C98cXB-4kSYKxsxncJfDyuNGIwSo0TZc9sTATlyxshPvqKy1Qv6umL2o0bqqKHftiXpGYxSovInNA1aT-yDrimF9fGPr1kFAFiTkzKSRh0gpgit8LXr4a5M2NBPCA5VtsAqsBCrq1RDL9ATg488gISrv1p4vDrE72NQACkZeljMxMcfYRLSq1a18LX8w36O");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <h2 class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">New Releases</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuADqBwewSgv1Tk5Q-ZUUOxDE1XjIge3Gki7FdeZ_lfj7kFnHSGavqmzXLFKAwDXrYwJ6xPZugzdGxXNRx1ItR2_pTRzTY1M58MSs9dwXtwbcs19VwjTMc-BqYxmyjd0xus1-ZhtzgqVlx2Tq5Esbe1_WXAO3lmDeliYySzK68oejr18jwLveVA3BJXMK9eztFwFKloFKqLO3BDA7ydN7WrJBaVIT89BRBWWrsL4Q1jtbi3qDqFymrjwW0W2xtUY5fqnib1GA6uXufh7");'
+                  ></div>
+                  <p class="text-[#111418] text-base font-medium leading-normal">The Last Frontier</p>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC7daEBD1sdSfHWomXT6pJf8JY-bzGLKvYUtp03Ox31tx9KoYs8PT78wdWL8pklZTV-L-IynVzYRcbJHz1YZE-o6ahPZ0db1IZEgidq6nujTZgfCRRD44LgP-Lxnj-zqkx5LO1txLLP-P93QTgevAgmytnrGNMr5SScv8S7A3Rz2FssC7vun9bhnsvI9QCw82MxtkaRcCUqAihX9TMPZmY69h8mX_cy73HDvznuTd6l2LnrMPnXHAFa8SZlOb38D4dZW8lFSvuupaQW");'
+                  ></div>
+                  <p class="text-[#111418] text-base font-medium leading-normal">Echoes of the Past</p>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCKP8F0uIgcGWEtw46qwHdOaDkw-DQYwqGyY4IjnjymQi-H8-GcRfuXn_xWxVlEySw8dm1-8rbxncdAkTGhmWr_VNcoCs3mnBRxQEWcE2gp0fOYT4id5c1PqHsP0H1L6Ii4Pydj-4ux_lLYmULbggDFk6cnti9H7q0QlSegvTFZZeuX6z4cSypyyRXmfDyHy7lPqSskbv5xB1m_aRL73e1AAk9-CipqHE9vTXSAk6OJN_OaAbYpMhIcb_oBbmkyet_MWD51R_iqjmiq");'
+                  ></div>
+                  <p class="text-[#111418] text-base font-medium leading-normal">Crimson Tide</p>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1T2CKYMYxs3u7Oa2fffIOcg0qvZnBxRSOXergr2vaef8EkNJNVAvc98IJ17_DHy5CMNZ0fDIYrecbIDYV8zOyrrSmw3aq1S_QnXhIS0CuEQkrDv2ynjNxvRHerI-58Wn_hLXLHzclgd3yi-3dIo9DWixG_FZqlWLu-ZftaD8VNnvaP7uD9UYW5S3karm_cRNLXlu01a3GaKmKBgaaxAzK04KXdIlPyI_eeKx_sKjvym7cSAIPXziXrAT5jjR2CxIN1uBYjoLKOqLl");'
+                  ></div>
+                  <p class="text-[#111418] text-base font-medium leading-normal">Whispers of the Wind</p>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDeKrvXO9vsXhrli91hbz1XP31nRQcOVU-c9t-5RXJaEn-DRPSbZ1dmX265elPzLCig7__SIw-bEUuGj2XTZXjC69NSmlxScG6xdVcE3ETYp-Vt-_JEh_GeBwNd5LvD-KDl_0HU-DlMD_t7GyrmPQW0ijU-ol8PnEKKA50ISJP5p1wwOxq071b10sG5CdaYL8bQjs7c4doKuSmlCNO14CHrvGmuwXVTOhqO0DRNxwgvWc04VxLwYrNZBAgnRbKiAWAORkP8ZMKhkLM6");'
+                  ></div>
+                  <p class="text-[#111418] text-base font-medium leading-normal">Shadows of Deception</p>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBu9dBRX0ZMBT29ATgONOiC_SEP36gR_Obhbh4_cck6D80bnhiWekOTyVP5BWQ0y-QOwVLKMq7BNJmvUvUirMLg81QSmkJQA65Xnr2NKyoUoIrDmrRGfH6yxsucum26BQV7K2Qx--NT5rbPoh5CqW4TYVK8sekahoPEyISJOjhuLBGTUwOKyQUHCyuv5q5y4XiVmXQWSfHonqjxR8xGnUczhT1c_2SVfJDPRMVBwlouPM_XVs1YvUWHOWuRaGDKrIMygW-6_kRSUDzx");'
+                  ></div>
+                  <p class="text-[#111418] text-base font-medium leading-normal">The Silent Witness</p>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Recommended</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB-G3uI5-IJYx1XYdwa2aQBcIwNAbX_9p-QhmF2ffjT_mnHJ5qIHBUhSgyVFHt0Ofji1zm_edZ4F5bEKW_EXT7oY_Pfdy-kvPt3xfY8ipDbtAjHf1r_kdaNpvtChlUtIM2Oj8cyliev3oNK68__3o-6-gmlq9JNaIDqKKGbQeZyPcVS2QmebxnlzwRJmeWYDdrKOnndEg38xLMaBFKbEclGf6TXoBGxJ8xY9nrPEA78Av6o0kBqtqZ9IBZSqmgIaLuqBDRYEycVi1TQ");'
+                  ></div>
+                  <p class="text-[#111418] text-base font-medium leading-normal">The Lost City</p>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAKe8VintQnXhbJkEfKq_CYM2XWnldzOm-rrA9_tHPWudZJSDpHAU5ql9GSJDW2Wm2TnpZBxCGGELJVwUnI6RFbAE_Dv3cg5IxSHMbCgrDTd5-Q8AuKvQxtShkWgN3oSagtKzHsKZDeeN25BdHvxihHUBb59rKLqFC1xjRnYJymyKRilmhjVz1bz9hsvx5oLb1sM_IwFqlUrwm4wPB_B8ojy74umlT5JGd20g_C_AezxmvYruAGe-iR8o2xYSJ_smvOFglAShZnnnR0");'
+                  ></div>
+                  <p class="text-[#111418] text-base font-medium leading-normal">Eternal Echoes</p>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB8qIt3pLlsjzzLeM4b60JO55Z7A86t42carzX2q90aq9aCuJexuw2aR_ZJY8lFWcCotBkFbf5iUoxz7KRX03WBM01EO82Tg7mkZD_aGNJ2mYUa73LmF7WfkxZ3clGsIpocJIhMu6O237SuQDSB0iRAegCNTqcN2oOR3bffcfOVcQP3WnJ49lWeyxouNSOgfmoO6ZzqK1OCApxVceI93E-MGkWCXrAu9BzP2C5bUqp2G47nvv6ybHEYfneNtNG7TPHTnqGAR8SJNMWJ");'
+                  ></div>
+                  <p class="text-[#111418] text-base font-medium leading-normal">Midnight Serenade</p>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBs8wMWPa6S1kiwDwRe_S25FTw4zXlQNjlfixrIrt2qa6pIYpdwgSIFj2wrNOr_zF0ynQ5AiXHTJ2dPMeb-7EXCM5sHn-XzNHvbZO8YJHRDFOQwNC6KFWHrSxC_tXbgCFO3ltAhU38LIaJIXgU61tcMwFf7ALHVTf1jOEdgXlY5NRJF-sYPtAIZOseLwL9Twa7cfTAAOcmPdlX1kIlNb-7O60M3bufCwJdyyp3-O-yJV1o2R8FKkp59hlJMsrDtcPAviwI02h06YmVG");'
+                  ></div>
+                  <p class="text-[#111418] text-base font-medium leading-normal">Veil of Secrets</p>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC2Wi41WOm6Wo1li-9s-aXgNamt5MMLxjfGi-xNerGnzs4AWV6RzK8bjnAEg-Xi0BVf_UtCuShCZ-rD5JBN1pCkL1wpv1po6L8HlFcvKfFTQnAdSd0sgDyGBOKINcsZRywhMyl2_0Q78mUHekokiyt4lvNv5Regvg3y9siBSDA7uUKZZJ7mokl_4SdVUQm2HcmFLO88kAbblHR6gXyCshbreWe6Fz3dGJqSXhqxsZeU4usiULZ-fMaUwgCyc-kRjotbrLJ14L8CsmHT");'
+                  ></div>
+                  <p class="text-[#111418] text-base font-medium leading-normal">Silent Whispers</p>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuANoPX_tpcH5jj7bqwyR1AwwQOwASwkg5kqCd1uIvwaHR2z8_m1cLkseiBDNsNyCiavTn1UJbQn401b5nhmiyTAEbDLDKnRf6ReD2-e6_hOGoDl1Lis7gFWHfMILBj8FpIvGPs2-oXK38wXFJJi0tcwh4jkREE4vvubOBBrCFC0U6buWUhEWWXGja3BDGc57i915iN9ydtAzzctXiS3SLPlShDfB0BEfjzdh2I_xegT1aVFzafjCOLcdMz35MjtVPTFhfmn8uZqFa1j");'
+                  ></div>
+                  <p class="text-[#111418] text-base font-medium leading-normal">The Unseen Observer</p>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Full Catalog</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD59Kt_KZALRF7AwQwct-jlAUFUtLcrhuqAiwlFzvl3nsPqdMmk4JFF8owqJstlT0Zqutjl9Ggsfa-31V7RyB0sOPloL3RZDbHL3xBPZtk_epjZA7Q0VrEG_CXY-adMG4pBlp6rCdc62pX9Yd0IRmBfxgwtPW46Oz14RqLFr2vzKOxw7cRdJXCjz4NXx4K10anpkoKMOmhtJjSXynn0G_O2vVg24f62GGOnmtASaN1QYXe7a-NeWPFVbXUxvbFKT-WUxT8CY-S9XeBE");'
+                ></div>
+                <p class="text-[#111418] text-base font-medium leading-normal">The Last Frontier</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC_pSzVjyrXUzA2g3mJmllcj6wJWGeIwq1iAY__DK2RzAPPwDPmk0o_u4B7_8WPyng7peK-ZI90jHhMB2Ulc28AjOo4SGwHeT_M-vcgbLwDfgAsM3E03KUv2Skd9pGwn0_ntRxOObitnam5oKr0Y6Q-oiMDVbGtQIvw5aljNdl_rquAJPnC3kSe7GGafy04VZx7TD3TeliuyZ6YaS7aB0AIPNkECZHM8SCrfAPTmXzFEXH6azRjHl6M3jN3fcSsI7Y0wJRiMfy46iQ5");'
+                ></div>
+                <p class="text-[#111418] text-base font-medium leading-normal">Echoes of the Past</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAusdf6fJQL1OSwMoaBhspQ4b4LKsXag3O7rZouinzWUM4cwnDruG4DIXpN2KqA3L7jAUhIKuHsdCFRu6pX592aQ8Is_TxKZSwHKiyWir7J3LHeM6dRERfIgse52B8BgL8RS5SuUlztgnScgxa-ahh5LVKMa9LDhREaTInK8mXyWiRWCD0MaXlOPStJCoP_dtAnDvLI0eDjJmjn9jvFpYisY7wYS20w51VjCbY4RXjV3x-hbetqyNYhl7RHZMTZ1g6WfGJbKsG3hTp6");'
+                ></div>
+                <p class="text-[#111418] text-base font-medium leading-normal">Crimson Tide</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQJncVxDxRavWc_OpWtD5RSpvOF3XJZYEKvEN5jUPcWr8wPu8jSYIou1NqmaDhilqSFpTuCROTJyitjZAnPYfydkdlwXgCiDFjEQFeQWOvHYVtGaMqtQSkFYaA0Q6aYReUpxYDgMa6Jn0xXIS6FcN1n4ScTEXNZ66uSWRsjc1v__05TsnBRcCHtcCYcULVn9H8akTyVQx25CIGGdZdD9b-bTJjfIbmc3zJwEap9as6A_7Hx3re53fm_phqhhSXrRsas4ESyt2lF47-");'
+                ></div>
+                <p class="text-[#111418] text-base font-medium leading-normal">Whispers of the Wind</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB5bwpsDoWkzSoVSLQJY164Is9Bo28O2sJ7FE03dnAPxsOreQIcEsz91XHzRPqJO-pOf6qMQ0AWsPlE37Nsp4qE8hu_6X-DO7a5Mt5Tzk0rXmXvHKBWWS8S3YXtTQJ3-wmZNksvrcc0a2JiV7BuRzk-SL5RwUXILUWhySW62sxodqfDRxydn9VV0Jf9KjFQT4GkNxGRC3Nlv7frShwPGhMjIeSZH7H2KV-dIyLzEY3M4o0S5hPrEoytBBjJJO10Cq8rAjCfOkVuiJow");'
+                ></div>
+                <p class="text-[#111418] text-base font-medium leading-normal">Shadows of Deception</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD_czjLXtIul8DqxL4Whn52670sK-seAPkFLbmpJzna7fzn42V1kVwZweZcVaBmd71xyaEnIMwqGCvm3_-q7uQLq7O79G1md4skt7Qug6cZP_iqBcVGd1IW30hCJN3SwP6OuLqUJ-tmaDKAGGiPa4PlNOwSFz3-v43IR-EO0iTrlFDJuMNRvJ4N9y1aHXFYZDMoLkdqlBzxtKqOFKTb6CSHNPhpvZQLw-fGwrUUtRoSw7UtIoMul13LTUpMi6zMq1QXVwCaj5trLC8h");'
+                ></div>
+                <p class="text-[#111418] text-base font-medium leading-normal">The Silent Witness</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA0yrnbVL_vg__GWRp8P1PeakiWSQV7Sc6EJj09h3a9cvk9ck1y_Lk183ZNFKKyryMUg5jXWLJxYun4cB0Tr37FRhv7IvH8ZF4fZPeQgovXNjsUTAcFsYQAmS_1M1wJYBtOUxh7If_jVAIKmIDkB2RPJegy1UUQwFheAiwkX5WEpRb8Vg49yBkcvs_uCogbGoDxqrPTsZuOkWa2XbrHa-FwSx8GyGoZwgfDjWbb3Y1eFKVdeLl2jEGJbFopF3bHxE8NYAF9kJrJft0N");'
+                ></div>
+                <p class="text-[#111418] text-base font-medium leading-normal">The Lost City</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCN-BP41VXqVtkgzZTR5YBBLjIGQfdT_rTz5a04-lqzmcs4ygbMVDAhRCSo1gjfsg3JMn9GxOskMlS6okxAbAjRhpi-Gso8RF_25LTE4JHcg1lqwbGlZMrdM6HVY86Kx4pgJ2ecQkfG2wzRQPsxpHuwod3aGoin3RN7dGIawzYWELfpfKs9ipxtrzgp5bvFVH8-1UAQ326W__iBRQYXXEEIgRKTrT2lR2ljbNJNcSLU9zqIDKGSTL3HX1GMLzyraPLQOKPbnyyWNg05");'
+                ></div>
+                <p class="text-[#111418] text-base font-medium leading-normal">Eternal Echoes</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDtEs3vsSzoO05olrNpK_tOeeqtKPjhlKRUIfxogODKNbsDgA6HnPgZq7lULJPreaG8ULA7hzlWvcCPVN_0fdBT8Mey8jPjDpYKpCy48z1XPj3GcO6VEkug76qzf1jcDKgoqGX9irANk6nytq1YnijPmalNvL0LQNWxFA78x6vCvQva49XzQ_6Ld2kOdYUDflD_x0I411q3iZJ7D566W-V8S3C5LLM7XWUsJPvyjfgNr6AfQ4HzJ84FGUa46GhoNtKR3KCgDbQ05iUN");'
+                ></div>
+                <p class="text-[#111418] text-base font-medium leading-normal">Midnight Serenade</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDywTH1r41k5NKVBfUs47x-JGHUTFs4V5x4Or6Yaq-0zr8S6YdiW1g09V3_NvOkSgGG5Zy4YSyPRPHV9QUZziNtU9xUV5mdYBY2n5iwDthu2SotKt7_IvK-A6VeGV8W12Y-zJ-kujHvwo5KHUtJKv_OpQRFDlraKaILI7ls1qjGkEqHTkTZXU0IIuakx69vS6Ll6hNBVdkj58p3yxVS-JoKQ4KXLFcZj9bG0amDmkjuom_JvVq3W0dDugNExR-Eghai_qtwflrUxCd-");'
+                ></div>
+                <p class="text-[#111418] text-base font-medium leading-normal">Veil of Secrets</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQVKABEoN9Wb9tH4abd24EU01yp9clL5BVocmGDBs2NQ5gQPM6zzUmolM_mk2o4x-Hyi4DWYodmNLzfdc-sT0RnlaJy6FuzQ6iNIy7myZI5IVkaSouo_sXNgGFT1WAAvf1nQ-u0b0G8sXes11RhRdbnW9eLGjUs0q_IiUvX6DJtE6OLd6GDt1SqIKlNBt-l6cgCswI032UZNLST4Kf568B1_MeOLEekMdjHVWIpSoHoxAuWPbp9Z6FiTxJg9KBpN2SiR0LEUFBHNve");'
+                ></div>
+                <p class="text-[#111418] text-base font-medium leading-normal">Silent Whispers</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDjiInkLmI6LUOtpCt-dDJSuWZuJh71QB7NjlHRQdq1caCA9hgbqdGvqDGXrdiEyslvuYX6N1OCGz-Rb4sa-tCJP0fH9L0nzed5DBmvE3K87WhSF4h-flA-Y7xmZ_-dYnaCF-0JJPGKjtXsAZyfvm3vFeN5KYj644UQCJ2smIGFW1oSq1y7FBXYpwPASnocp5c3V_vhdwlMYRnzrHwZ457iV_CIG-ROWTYEI0Rb5QE3vU2hQSL0T67JqjOZZrz08hi2yEvrCxkdX45c");'
+                ></div>
+                <p class="text-[#111418] text-base font-medium leading-normal">The Unseen Observer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
